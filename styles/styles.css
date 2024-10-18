@@ -5,7 +5,7 @@
 }
 
 .main-header {
-  background-color: #25423b;
+  background-color: #244d4d;
   color: white;
 }
 .main-header .first-header {
@@ -30,11 +30,11 @@
   text-align: end;
 }
 .main-header .main-container {
-  margin: 70px 120px;
+  margin: 0px 120px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   color: white;
-  background-color: #25423b;
+  background-color: #244d4d;
 }
 .main-header .main-container .main-image {
   grid-column: 2/4;
@@ -74,9 +74,16 @@
   font-size: 16px;
 }
 
-.content {
+.content-1 {
   height: 200px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content-1 .box1 {
+  background-color: #6fd9c0;
+  margin: 50px;
 }
 
 .second-header {
@@ -107,7 +114,7 @@
 
 .main-footer {
   display: grid;
-  background-color: #25423b;
+  background-color: #244d4d;
   height: 500px;
 }
 .main-footer .first-footer {

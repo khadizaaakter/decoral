@@ -14,12 +14,12 @@ $font-family-all: "Times New Roman", Times, serif;
 $all-margin: 15px 120px;
 $side-margins: 0 120px;
 $white-color: white;
-$bg-color: #25423b;
+$bg-color: #244d4d;
 $font-size-large: 35px;
 $font-size-xlarge: 50px;
 
 .main-header {
-  background-color: #25423b;
+  background-color: $bg-color;
   color: white;
 
   .first-header {
@@ -46,7 +46,7 @@ $font-size-xlarge: 50px;
   }
 
   .main-container {
-    margin: 70px 120px;
+    margin: 0px 120px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     color: $white-color;
@@ -86,7 +86,7 @@ $font-size-xlarge: 50px;
       align-self: self-start;
       justify-self: center;
       font-size: $font-size-xlarge;
-      .button-explore{
+      .button-explore {
         padding: 15px 40px;
         color: white;
         background-color: black;
@@ -97,10 +97,19 @@ $font-size-xlarge: 50px;
   }
 }
 
-.content {
+.content-1 {
   height: 200px;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  .box1{
+    background-color: #6fd9c0;
+    margin: 50px;
+  }
 }
+
 
 .second-header {
   margin: $all-margin;
@@ -134,7 +143,7 @@ $font-size-xlarge: 50px;
 .main-footer {
   display: grid;
   // margin: $all-margin;
-  background-color: #25423b;
+  background-color: $bg-color;
   height: 500px;
 
   .first-footer {
@@ -211,3 +220,4 @@ $font-size-xlarge: 50px;
     color: rgb(255, 251, 251);
   }
 }
+
