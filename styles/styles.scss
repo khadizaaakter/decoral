@@ -98,18 +98,98 @@ $font-size-xlarge: 50px;
 }
 
 .content-1 {
-  height: 200px;
+  height: auto;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-  .box1{
-    background-color: #6fd9c0;
+  margin: $all-margin;
+
+  .box1 {
+    margin: 90px;
+    display: grid;
+
+    img {
+      width: auto;
+      height: 500px;
+      object-fit: cover;
+      margin-bottom: 14px;
+    }
+
+    .phone,
+    .number {
+      text-align: left;
+      font-size: 19px;
+      padding: 5px;
+      color: #02534d;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .number:hover {
+      font-size: 20px;
+      cursor: pointer;
+      color: orangered;
+      transition: 0.3s;
+    }
+  }
+
+  .box2 {
+    display: flex;
     margin: 50px;
+    justify-content: space-between;
+    align-items: center;
+
+    .paras {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .para1,
+      .paras2,
+      .paras3 {
+        margin-bottom: 10px;
+        padding: 5px;
+      }
+      .para1 {
+        font-size: 18px;
+      }
+      .paras2 {
+        font-size: 40px;
+        font-weight: 600;
+        color: #02534d;
+        font-family: "Times New Roman", Times, serif;
+      }
+      .paras3 {
+        font-size: 18px;
+        color: rgb(99, 102, 103);
+      }
+
+      .attach {
+        margin-top: 5px;
+      }
+
+      .button-contact {
+        margin: 28px 0;
+        background-color: #02534d;
+        padding: 10px 25px;
+        color: white;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .button-contact:hover{
+        font-size:17px ;
+        transition: 0.4s ease-in-out ;
+      }
+    }
+
+    img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      margin-left: 120px;
+    }
   }
 }
-
 
 .second-header {
   margin: $all-margin;
@@ -220,4 +300,3 @@ $font-size-xlarge: 50px;
     color: rgb(255, 251, 251);
   }
 }
-
